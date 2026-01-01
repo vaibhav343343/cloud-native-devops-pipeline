@@ -1,3 +1,9 @@
+![CI/CD](https://img.shields.io/badge/CI%2FCD-Jenkins-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![AWS](https://img.shields.io/badge/AWS-EC2-orange)
+![Python](https://img.shields.io/badge/Python-Flask-green)
+# Cloud-Native DevOps Pipeline
+End-to-end CI/CD pipeline using Jenkins, Docker, and AWS EC2 to deploy a Flask application.
 \# Cloud-Native DevOps Pipeline (Jenkins, Docker, AWS)
 
 
