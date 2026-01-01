@@ -1,120 +1,63 @@
+# Cloud-Native DevOps Pipeline
+
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-Jenkins-blue)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
 ![AWS](https://img.shields.io/badge/AWS-EC2-orange)
 ![Python](https://img.shields.io/badge/Python-Flask-green)
-# Cloud-Native DevOps Pipeline
-End-to-end CI/CD pipeline using Jenkins, Docker, and AWS EC2 to deploy a Flask application.
-\# Cloud-Native DevOps Pipeline (Jenkins, Docker, AWS)
 
+End-to-end CI/CD pipeline using Jenkins, Docker, and AWS EC2.
 
+---
 
-\## Overview
+## Overview
+This project demonstrates an automated CI/CD pipeline where a Flask application is built,
+containerized, and deployed on AWS EC2 using Jenkins.
 
-This project demonstrates an end-to-end CI/CD pipeline using Jenkins, Docker, and AWS EC2.
+---
 
-A Flask web application is containerized using Docker and automatically built and deployed via Jenkins.
+## Architecture
+GitHub → Jenkins → Docker → AWS EC2 → Flask Application
 
+---
 
+## CI/CD Workflow
+1. Source code pushed to GitHub
+2. Jenkins pipeline triggered
+3. Docker image built
+4. Docker container deployed on EC2
+5. Application exposed via public IP
 
-\## Architecture
+---
 
-\- Source Control: GitHub
-
-\- CI/CD Tool: Jenkins
-
-\- Containerization: Docker
-
-\- Cloud Platform: AWS EC2 (Ubuntu)
-
-\- Application: Python Flask
-
-
-
-
-
-\## CI/CD Workflow
-
-1\. Code pushed to GitHub
-
-2\. Jenkins pipeline triggered
-
-3\. Docker image built
-
-4\. Docker container deployed on EC2
-
-5\. Application exposed via public IP
-
-
-
-
-
-\## Project Structure
-
+## Project Structure
 cloud-native-devops-pipeline/
-
 ├── app.py
-
 ├── Dockerfile
-
 ├── Jenkinsfile
-
 ├── README.md
-
 └── .gitignore
 
+---
 
-
-
-
-\## Docker Commands
-
+## Docker Commands
 docker build -t flask-ci-image .
-
 docker run -d -p 5000:5000 flask-ci-image
 
+---
 
+## Live Application
+http://<EC2_PUBLIC_IP>:5000
 
+---
 
+## Key Learnings
+- Jenkins CI pipelines
+- Docker containerization
+- AWS EC2 deployment
+- Security group configuration
 
-\## Jenkins Pipeline
+---
 
-\- Checkout source code
-
-\- Build Docker image
-
-\- Run Docker container
-
-
-
-
-
-\## Live Application
-
-http://<EC2\_PUBLIC\_IP>:5000
-
-
-
-
-
-\## Key Learnings
-
-\- Jenkins CI pipeline
-
-\- Docker build \& run
-
-\- AWS EC2 deployment
-
-\- Security group configuration
-
-
-
-
-
-\## Author
-
+## Author
 Vaibhav Sudrik  
-
 Cloud Computing Student | DevOps Enthusiast
-
-
-
