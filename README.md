@@ -49,7 +49,7 @@ docker run -d -p 5000:5000 flask-ci-image
 
 ## Live Application
 http://<EC2_PUBLIC_IP>:5000
-## Live Application
+
 
 ---
 
