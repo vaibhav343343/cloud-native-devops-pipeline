@@ -19,7 +19,6 @@ containerized, and deployed on AWS EC2 using Jenkins.
 GitHub → Jenkins → Docker → AWS EC2 → Flask Application
 ## Architecture
 
-![Architecture Diagram](assets/architecture.png)
 
 ---
 
@@ -51,8 +50,6 @@ docker run -d -p 5000:5000 flask-ci-image
 ## Live Application
 http://<EC2_PUBLIC_IP>:5000
 ## Live Application
-
-![Flask App Running](assets/app-running.png)
 
 ---
 
