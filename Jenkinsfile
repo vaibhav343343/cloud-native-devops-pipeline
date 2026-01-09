@@ -25,15 +25,18 @@ pipeline {
         }
 
         stage('Deploy App') {
-    sshagent(['ubuntu']) {
-        sh """
-        ssh -o StrictHostKeyChecking=no ubuntu@3.236.252.74 << 'EOF'
-        cd devops-app
-        git pull
-        pkill -f app.py || true
-        nohup python3 app.py > log.txt 2>&1 &
-        EOF
-        """
+            steps {
+                sshagent(['ec2-ssh']) {
+                    sh """
+                    ssh -o StrictHostKeyChecking=no ubuntu@3.236.252.74 << 'EOF'
+                    cd devops-app
+                    git pull origin main
+                    pkill -f app.py || true
+                    nohup python3 app.py > log.txt 2>&1 &
+                    EOF
+                    """
+                }
+            }
+        }
     }
 }
-
