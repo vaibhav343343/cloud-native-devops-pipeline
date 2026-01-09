@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps Deployment Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1 class="heading">🚀 DevOps CI/CD Deployment Dashboard</h1>
+<p class="sub-heading">Live Deployment Status for Vaibhav Sudrik</p>
+
+<div class="container">
+
+    <div class="card">
+        <h2>🟢 Application Status</h2>
+        <p><b>App Name:</b> DevOps CI/CD Live Project</p>
+        <p><b>Environment:</b> AWS EC2</p>
+        <p><b>Backend:</b> Python Flask</p>
+        <p><b>Deployed By:</b> Jenkins Pipeline</p>
+        <p class="status success">Status: Running ✔</p>
+    </div>
+
+    <div class="card">
+        <h2>📦 Latest Deployment Info</h2>
+        <p><b>Last Build Number:</b> #42</p>
+        <p><b>Build Status:</b> SUCCESS ✔</p>
+        <p><b>Auto-Deploy:</b> Enabled</p>
+        <p><b>Last Update:</b> Code updated & redeployed automatically</p>
+        <button onclick="window.location.reload()" class="btn">🔄 Refresh Status</button>
+    </div>
+
+    <div class="card large">
+<pre>
+LATEST PIPELINE LOGS:
+
+✔ Checking GitHub repository
+✔ Pulling latest changes
+✔ Installing dependencies
+✔ Running build scripts
+✔ Deploying to EC2 instance
+✔ Restarting Python application
+✔ Deployment completed successfully
+
+Time: 4.21 seconds
+Pipeline: stable
+</pre>
+    </div>
+
+</div>
+
+</body>
+</html>
